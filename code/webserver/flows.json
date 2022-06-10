@@ -1,0 +1,3654 @@
+[
+    {
+        "id": "3a8a44955e6b1b5b",
+        "type": "tab",
+        "label": "MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "035df40f4aa608e2",
+        "type": "tab",
+        "label": "Database",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "226feb92e58e83aa",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4832cfdf5504ce96",
+        "type": "tab",
+        "label": "Email",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2f034e20af9f8893",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "thingsboardtest.de",
+        "port": "1883",
+        "clientid": "DKWarehouseRPI",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "3c132b270ceee7f7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Warehouse",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6969dfa8874fcb78",
+        "type": "ui_group",
+        "name": "table",
+        "tab": "166034ebe79388fb",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b16b0c91545166b",
+        "type": "sqlitedb",
+        "db": "C:\\SQLite\\Warehouselabels.db",
+        "mode": "RWC"
+    },
+    {
+        "id": "166034ebe79388fb",
+        "type": "ui_tab",
+        "name": "Oversigt",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "098ca0d05ca4730b",
+        "type": "ui_tab",
+        "name": "Setup",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "974dfba731e35b1e",
+        "type": "ui_group",
+        "name": "button setup",
+        "tab": "098ca0d05ca4730b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aac9edf9180d86af",
+        "type": "ui_group",
+        "name": "Produkt",
+        "tab": "098ca0d05ca4730b",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1b03e85e03cca24f",
+        "type": "ui_group",
+        "name": "esp",
+        "tab": "098ca0d05ca4730b",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "033cac6f4a49fbf4",
+        "type": "ui_group",
+        "name": "email setup",
+        "tab": "098ca0d05ca4730b",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f66b2debd2ffe7e5",
+        "type": "ui_spacer",
+        "z": "226feb92e58e83aa",
+        "name": "spacer",
+        "group": "974dfba731e35b1e",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f5f7146e509bf5d6",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "166034ebe79388fb",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7e47cccb40017092",
+        "type": "debug",
+        "z": "3a8a44955e6b1b5b",
+        "name": "Broker Status Events",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9f4f19b42d0305a4",
+        "type": "mqtt out",
+        "z": "3a8a44955e6b1b5b",
+        "name": "Publisher",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2f034e20af9f8893",
+        "x": 480,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "759b501dced0384f",
+        "type": "mqtt in",
+        "z": "3a8a44955e6b1b5b",
+        "name": "subscriber setup",
+        "topic": "DKWarehouse/setup/RX",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2f034e20af9f8893",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 460,
+        "wires": [
+            [
+                "16e3954ef2eb7aac"
+            ]
+        ]
+    },
+    {
+        "id": "abdda6dcd9176288",
+        "type": "mqtt in",
+        "z": "3a8a44955e6b1b5b",
+        "name": "Subscriber button",
+        "topic": "DKWarehouse/order",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2f034e20af9f8893",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 380,
+        "wires": [
+            [
+                "68c5dcab97e31f7b"
+            ]
+        ]
+    },
+    {
+        "id": "68c5dcab97e31f7b",
+        "type": "link out",
+        "z": "3a8a44955e6b1b5b",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "873638b38bc27abc"
+        ],
+        "x": 425,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f85796a9ece7bae6",
+        "type": "aedes broker",
+        "z": "3a8a44955e6b1b5b",
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "7e47cccb40017092"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cbded32c3ec0aad8",
+        "type": "link in",
+        "z": "3a8a44955e6b1b5b",
+        "name": "button_setup_state",
+        "links": [
+            "0d3ddf53fc774e77"
+        ],
+        "x": 155,
+        "y": 180,
+        "wires": [
+            [
+                "5a892bb0903d8498"
+            ]
+        ]
+    },
+    {
+        "id": "5a892bb0903d8498",
+        "type": "change",
+        "z": "3a8a44955e6b1b5b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "DKWarehouse/setup/TX",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "9f4f19b42d0305a4"
+            ]
+        ]
+    },
+    {
+        "id": "16e3954ef2eb7aac",
+        "type": "link out",
+        "z": "3a8a44955e6b1b5b",
+        "name": "setup_receive",
+        "mode": "link",
+        "links": [
+            "fbf1255e840bd0c1"
+        ],
+        "x": 425,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "97345846614af8e2",
+        "type": "mqtt in",
+        "z": "3a8a44955e6b1b5b",
+        "name": "",
+        "topic": "DKWarehouse/setup/ack",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2f034e20af9f8893",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 540,
+        "wires": [
+            [
+                "703d43e3e96b1dc7",
+                "fc0ac7de742c82dd"
+            ]
+        ]
+    },
+    {
+        "id": "703d43e3e96b1dc7",
+        "type": "link out",
+        "z": "3a8a44955e6b1b5b",
+        "name": "setup_acknowledge",
+        "mode": "link",
+        "links": [
+            "065f2f90a4b72cf1"
+        ],
+        "x": 425,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "fc0ac7de742c82dd",
+        "type": "debug",
+        "z": "3a8a44955e6b1b5b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "20d2bd778c264cb6",
+        "type": "inject",
+        "z": "035df40f4aa608e2",
+        "name": "Test",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT produkt.varenr, knap.antal, produkt.navn, produkt.beskrivelse, knap.state, knap.reset, knap.knap_sn, knap.esp_mac FROM produkt, knap WHERE knap.knap_sn = 3 AND knap.esp_mac = '60:55:F9:83:B8:AA' AND produkt.varenr = knap.produkt_id",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "a4b2d8ec0fecfbdb"
+            ]
+        ]
+    },
+    {
+        "id": "561e367f97447d2b",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "stringify",
+        "func": "var text = JSON.stringify(msg.payload[0]);\nmsg.payload = text;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 340,
+        "wires": [
+            [
+                "6106b076649fee84",
+                "cdf42d48ddf432e7"
+            ]
+        ]
+    },
+    {
+        "id": "6106b076649fee84",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "Message cleanup",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\":",
+                "fromt": "str",
+                "to": ": ",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\"",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ",",
+                "fromt": "str",
+                "to": "\"\\n\"",
+                "tot": "json"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "[{",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "}]",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "{",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "}",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "841fa7493a46a906"
+            ]
+        ]
+    },
+    {
+        "id": "873638b38bc27abc",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "database_call",
+        "links": [
+            "68c5dcab97e31f7b"
+        ],
+        "x": 65,
+        "y": 420,
+        "wires": [
+            [
+                "1a57eb35b9bddc0d"
+            ]
+        ]
+    },
+    {
+        "id": "f4e9386fe0f8e978",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "knap_id_caller",
+        "func": "msg.payload = \"UPDATE knap SET state = state +1 WHERE knap_sn = \" + msg.payload[0] + \" AND esp_mac = '\" + msg.payload[1] + \"' AND state < 2; \\nSELECT produkt.varenr, knap.antal, produkt.navn, produkt.leverandør, knap.state, knap.reset, knap.knap_sn, knap.esp_mac FROM produkt, knap WHERE knap.knap_sn = \" + msg.payload[0] + \" AND knap.esp_mac = '\" + msg.payload[1] + \"' AND produkt.varenr = knap.produkt_id;\\nINSERT OR IGNORE INTO esp (mac) VALUES ('\" + msg.payload[1] + \"');\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "ae857d12519eb2bb"
+            ]
+        ]
+    },
+    {
+        "id": "1a57eb35b9bddc0d",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "string_to_array",
+        "func": "var str = msg.payload\nmsg.payload = str.split(\" \")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "f4e9386fe0f8e978"
+            ]
+        ]
+    },
+    {
+        "id": "03fd0f0b729c5c78",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "Update oversigt",
+        "func": "msg.topic = \"SELECT knap.knap_sn, knap.produkt_id, produkt.navn, knap.antal, knap.state, knap.gpos, esp.mpos, knap.pair, knap.opdateret FROM knap, produkt, esp WHERE knap.produkt_id = produkt.varenr AND knap.reset = 0 AND esp.mac = knap.esp_mac ORDER BY knap.opdateret;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 480,
+        "wires": [
+            [
+                "823f90c7ce048a21"
+            ]
+        ]
+    },
+    {
+        "id": "cdadd2bc9d579862",
+        "type": "inject",
+        "z": "035df40f4aa608e2",
+        "name": "Update oversigt",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT knap.knap_sn, knap.produkt_id, produkt.navn, knap.antal, knap.state, knap.gpos, esp.mpos, knap.pair, knap.opdateret FROM knap, produkt, esp WHERE knap.produkt_id = produkt.varenr AND knap.reset = 0 AND esp.mac = knap.esp_mac ORDER BY knap.opdateret",
+        "payload": "",
+        "payloadType": "str",
+        "x": 540,
+        "y": 520,
+        "wires": [
+            [
+                "823f90c7ce048a21"
+            ]
+        ]
+    },
+    {
+        "id": "217a584b5804ac19",
+        "type": "link out",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "mode": "link",
+        "links": [
+            "895a24511b180d32"
+        ],
+        "x": 985,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "a4b2d8ec0fecfbdb",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsMail",
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "302b0d8baae9e2cc"
+            ]
+        ]
+    },
+    {
+        "id": "51e05a2c1b4f446d",
+        "type": "inject",
+        "z": "035df40f4aa608e2",
+        "name": "dropdown populator",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT varenr FROM produkt;",
+        "payload": "",
+        "payloadType": "str",
+        "x": 180,
+        "y": 600,
+        "wires": [
+            [
+                "3e5431ffea8b73d1"
+            ]
+        ]
+    },
+    {
+        "id": "823f90c7ce048a21",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsOversigt",
+        "x": 800,
+        "y": 480,
+        "wires": [
+            [
+                "217a584b5804ac19"
+            ]
+        ]
+    },
+    {
+        "id": "3e5431ffea8b73d1",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsUi",
+        "x": 700,
+        "y": 600,
+        "wires": [
+            [
+                "1ee5393e9e27655c"
+            ]
+        ]
+    },
+    {
+        "id": "1ee5393e9e27655c",
+        "type": "link out",
+        "z": "035df40f4aa608e2",
+        "name": "UI_dropdown",
+        "mode": "link",
+        "links": [
+            "b5f571040a41700e",
+            "b7bdb98731540597"
+        ],
+        "x": 865,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "207ceca1a5f3995c",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsSetup",
+        "x": 1410,
+        "y": 960,
+        "wires": [
+            [
+                "d3893a17e8f0feaa",
+                "6a809f580efd4250"
+            ]
+        ]
+    },
+    {
+        "id": "fbf1255e840bd0c1",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "setup_receive",
+        "links": [
+            "16e3954ef2eb7aac"
+        ],
+        "x": 95,
+        "y": 740,
+        "wires": [
+            [
+                "7bb7739a52d5a546"
+            ]
+        ]
+    },
+    {
+        "id": "b59c0f61c760aacf",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "add button",
+        "func": "arr = msg.payload;\nmsg.payload = \"INSERT OR IGNORE INTO knap (produkt_id, esp_mac, knap_sn, antal, reset, gpos, state) VALUES ('\" + arr.varenr + \"' , '\" + arr.mqtt[1] + \"' , \" + arr.mqtt[0] + \" , \" + arr.antal + \" , \" + arr.reset + \" , '\" + arr.gpos + \"', 0); \\n UPDATE knap SET produkt_id = '\" + arr.varenr + \"', antal = \" + arr.antal + \", reset = \" + arr.reset + \" , gpos = '\" + arr.gpos + \"' , state = 0 WHERE esp_mac = '\" + arr.mqtt[1] + \"' AND knap_sn = \" + arr.mqtt[0] + \";\";\nmsg.produkt = arr.varenr;\nmsg.mac = arr.mqtt[1];\nmsg.knap = arr.mqtt[0];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 900,
+        "wires": [
+            [
+                "2fb9ac35693939a4"
+            ]
+        ]
+    },
+    {
+        "id": "2894d90d417caf80",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "varenummer_dropdown",
+        "links": [
+            "027abf676374f18d"
+        ],
+        "x": 235,
+        "y": 820,
+        "wires": [
+            [
+                "e17b6821646950ec"
+            ]
+        ]
+    },
+    {
+        "id": "98585dbeb70f3b0e",
+        "type": "join",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": " ",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 550,
+        "y": 840,
+        "wires": [
+            [
+                "b59c0f61c760aacf",
+                "ffcd44e26c0336b2"
+            ]
+        ]
+    },
+    {
+        "id": "d4a9260a85463f9d",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "mqtt",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 740,
+        "wires": [
+            [
+                "98585dbeb70f3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "e17b6821646950ec",
+        "type": "msg-resend",
+        "z": "035df40f4aa608e2",
+        "interval": "2",
+        "intervalUnit": "secs",
+        "maximum": "0",
+        "bytopic": false,
+        "clone": false,
+        "firstDelayed": false,
+        "addCounters": false,
+        "waitForResend": false,
+        "highRate": true,
+        "outputCountField": "",
+        "outputMaxField": "",
+        "name": "",
+        "x": 370,
+        "y": 820,
+        "wires": [
+            [
+                "98585dbeb70f3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "7bb7739a52d5a546",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "func": "var str = msg.payload\nmsg.payload = str.split(\" \");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 180,
+        "y": 740,
+        "wires": [
+            [
+                "d4a9260a85463f9d"
+            ]
+        ]
+    },
+    {
+        "id": "ffcd44e26c0336b2",
+        "type": "link out",
+        "z": "035df40f4aa608e2",
+        "name": "setup_popup",
+        "mode": "link",
+        "links": [
+            "6bdc5c90e37861ec",
+            "47fd6cced440f637"
+        ],
+        "x": 695,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "97a05035b51d5618",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "Add product",
+        "func": "msg.payload = \"INSERT OR IGNORE INTO produkt (varenr, navn, beskrivelse) VALUES ('\" + msg.payload.varenr + \"' , '\" + msg.payload.navn + \"' , '\" + msg.payload.beskrivelse + \"'); \\nUPDATE produkt SET varenr = '\" + msg.payload.varenr + \"', navn = '\" + msg.payload.navn + \"', beskrivelse = '\" + msg.payload.beskrivelse + \"' WHERE varenr = '\" + msg.payload.varenr + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 960,
+        "wires": [
+            [
+                "2fb9ac35693939a4"
+            ]
+        ]
+    },
+    {
+        "id": "151d2af128f6b236",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "new_product",
+        "links": [
+            "24be292ae20a2dc7",
+            "c8363119c46c6cc8"
+        ],
+        "x": 615,
+        "y": 960,
+        "wires": [
+            [
+                "97a05035b51d5618"
+            ]
+        ]
+    },
+    {
+        "id": "fe22fc792c106529",
+        "type": "watch",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "files": "C:\\\\SQLite\\\\Warehouselabels.db",
+        "recursive": "",
+        "x": 190,
+        "y": 660,
+        "wires": [
+            [
+                "03fd0f0b729c5c78",
+                "22e8a468b086b814",
+                "1d9df477c6dc3fe6"
+            ]
+        ]
+    },
+    {
+        "id": "22e8a468b086b814",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SELECT varenr FROM produkt;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 640,
+        "wires": [
+            [
+                "3e5431ffea8b73d1"
+            ]
+        ]
+    },
+    {
+        "id": "5e378f1c1c8aef42",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "antal",
+        "links": [
+            "ba707f2dbf0d252a"
+        ],
+        "x": 235,
+        "y": 880,
+        "wires": [
+            [
+                "e9c02857956f48b2"
+            ]
+        ]
+    },
+    {
+        "id": "e9c02857956f48b2",
+        "type": "msg-resend",
+        "z": "035df40f4aa608e2",
+        "interval": "2",
+        "intervalUnit": "secs",
+        "maximum": "0",
+        "bytopic": false,
+        "clone": false,
+        "firstDelayed": false,
+        "addCounters": false,
+        "waitForResend": false,
+        "highRate": true,
+        "outputCountField": "",
+        "outputMaxField": "",
+        "name": "",
+        "x": 370,
+        "y": 880,
+        "wires": [
+            [
+                "98585dbeb70f3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "302b0d8baae9e2cc",
+        "type": "switch",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "property": "payload[0].reset",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "561e367f97447d2b"
+            ],
+            [
+                "d754d44df7d82098"
+            ]
+        ]
+    },
+    {
+        "id": "0882d8de9c6d1d01",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "reset_knap",
+        "links": [
+            "891c79222943a4a3"
+        ],
+        "x": 235,
+        "y": 940,
+        "wires": [
+            [
+                "33e219f903fcd787"
+            ]
+        ]
+    },
+    {
+        "id": "33e219f903fcd787",
+        "type": "msg-resend",
+        "z": "035df40f4aa608e2",
+        "interval": "2",
+        "intervalUnit": "secs",
+        "maximum": "0",
+        "bytopic": false,
+        "clone": false,
+        "firstDelayed": false,
+        "addCounters": false,
+        "waitForResend": false,
+        "highRate": true,
+        "outputCountField": "",
+        "outputMaxField": "",
+        "name": "",
+        "x": 370,
+        "y": 940,
+        "wires": [
+            [
+                "98585dbeb70f3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "d754d44df7d82098",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "func": "msg.topic = \"UPDATE knap SET state = 0 WHERE produkt_id = '\" + msg.payload[0].varenr + \"' AND esp_mac = '\" + msg.payload[0].esp_mac + \"' AND antal = \" + msg.payload[0].antal + \";\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 400,
+        "wires": [
+            [
+                "cdc52e40cf2e1b78"
+            ]
+        ]
+    },
+    {
+        "id": "cdc52e40cf2e1b78",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "state reset",
+        "x": 1010,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae857d12519eb2bb",
+        "type": "split",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "cd27eee43cb59c37"
+            ]
+        ]
+    },
+    {
+        "id": "cd27eee43cb59c37",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "a4b2d8ec0fecfbdb"
+            ]
+        ]
+    },
+    {
+        "id": "3bb709566980db55",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "hylde_position",
+        "links": [
+            "ae756fb45f6ea7d3"
+        ],
+        "x": 235,
+        "y": 1000,
+        "wires": [
+            [
+                "3e65435b22997f53"
+            ]
+        ]
+    },
+    {
+        "id": "3e65435b22997f53",
+        "type": "msg-resend",
+        "z": "035df40f4aa608e2",
+        "interval": "2",
+        "intervalUnit": "secs",
+        "maximum": "0",
+        "bytopic": false,
+        "clone": false,
+        "firstDelayed": false,
+        "addCounters": false,
+        "waitForResend": false,
+        "highRate": true,
+        "outputCountField": "",
+        "outputMaxField": "",
+        "name": "",
+        "x": 370,
+        "y": 1000,
+        "wires": [
+            [
+                "98585dbeb70f3b0e"
+            ]
+        ]
+    },
+    {
+        "id": "2fb9ac35693939a4",
+        "type": "split",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 910,
+        "y": 960,
+        "wires": [
+            [
+                "d4568a336fa80aaf"
+            ]
+        ]
+    },
+    {
+        "id": "d4568a336fa80aaf",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1070,
+        "y": 960,
+        "wires": [
+            [
+                "207ceca1a5f3995c"
+            ]
+        ]
+    },
+    {
+        "id": "1d9df477c6dc3fe6",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "SELECT name FROM esp;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 470,
+        "y": 680,
+        "wires": [
+            [
+                "3e5431ffea8b73d1"
+            ]
+        ]
+    },
+    {
+        "id": "dd79714d01853655",
+        "type": "inject",
+        "z": "035df40f4aa608e2",
+        "name": "dropdown populator",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT name FROM esp;",
+        "payload": "",
+        "payloadType": "str",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "3e5431ffea8b73d1"
+            ]
+        ]
+    },
+    {
+        "id": "8817d0f32f4e2153",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "esp_add",
+        "links": [
+            "3e87c52491e478d9"
+        ],
+        "x": 615,
+        "y": 1020,
+        "wires": [
+            [
+                "fbba980f5bba3de0"
+            ]
+        ]
+    },
+    {
+        "id": "fbba980f5bba3de0",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "add esp",
+        "func": "arr = msg.payload\nmsg.payload = \"INSERT OR IGNORE INTO esp (mpos, name, mac) VALUES ('\" + arr.mpos + \"' , '\" + arr.name + \"' , '\" + arr.mac + \"'); \\n UPDATE esp SET mpos = '\" + arr.mpos + \"', name = '\" + arr.name + \"' WHERE mac = '\" + arr.mac + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1020,
+        "wires": [
+            [
+                "2fb9ac35693939a4"
+            ]
+        ]
+    },
+    {
+        "id": "65752bb2561283b8",
+        "type": "link in",
+        "z": "035df40f4aa608e2",
+        "name": "mac_call",
+        "links": [
+            "17d39755651912a0"
+        ],
+        "x": 175,
+        "y": 1180,
+        "wires": [
+            [
+                "74442c164077a888"
+            ]
+        ]
+    },
+    {
+        "id": "74442c164077a888",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "select mac and mpos",
+        "func": "msg.payload = \"SELECT mac, mpos FROM esp WHERE name = '\" + msg.payload + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1180,
+        "wires": [
+            [
+                "0711510687af519e"
+            ]
+        ]
+    },
+    {
+        "id": "2f8956ad19759a65",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsEspSetup",
+        "x": 780,
+        "y": 1180,
+        "wires": [
+            [
+                "81ab756898d7986f"
+            ]
+        ]
+    },
+    {
+        "id": "81ab756898d7986f",
+        "type": "link out",
+        "z": "035df40f4aa608e2",
+        "name": "esp_mac",
+        "mode": "link",
+        "links": [
+            "a365b2b8f35ed461"
+        ],
+        "x": 965,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "0711510687af519e",
+        "type": "change",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 1180,
+        "wires": [
+            [
+                "2f8956ad19759a65"
+            ]
+        ]
+    },
+    {
+        "id": "15e618606e2bd4a3",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "Button pair check",
+        "func": "msg.topic = \"SELECT COUNT(1) FROM knap WHERE produkt_id = '\" + msg.produkt + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1170,
+        "y": 900,
+        "wires": [
+            [
+                "207ceca1a5f3995c",
+                "f44a6a0f7479c7a9"
+            ]
+        ]
+    },
+    {
+        "id": "54543625f859b19d",
+        "type": "delay",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "100",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 900,
+        "wires": [
+            [
+                "15e618606e2bd4a3"
+            ]
+        ]
+    },
+    {
+        "id": "d3893a17e8f0feaa",
+        "type": "debug",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1650,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "f44a6a0f7479c7a9",
+        "type": "debug",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6a809f580efd4250",
+        "type": "switch",
+        "z": "035df40f4aa608e2",
+        "name": "If count",
+        "property": "payload[0][\"COUNT(1)\"]",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1660,
+        "y": 960,
+        "wires": [
+            [
+                "a86e6e82102c48a8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a86e6e82102c48a8",
+        "type": "link out",
+        "z": "035df40f4aa608e2",
+        "name": "pair_check",
+        "mode": "link",
+        "links": [
+            "88261bee31fa11ea"
+        ],
+        "x": 1795,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "fc3c891f43184014",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "func": "msg.topic = \"UPDATE knap SET pair = 'Nej' WHERE esp_mac = '\" + msg.mac + \"' AND produkt_id = '\" + msg.produkt + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1820,
+        "y": 940,
+        "wires": [
+            [
+                "c8a10b036762e461"
+            ]
+        ]
+    },
+    {
+        "id": "c8a10b036762e461",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsPair",
+        "x": 2040,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1233f3c242c29df",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "func": "msg.topic = \"UPDATE knap SET pair = 'Ja' WHERE esp_mac = '\" + msg.mac + \"' AND produkt_id = '\" + msg.produkt + \"';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1820,
+        "y": 980,
+        "wires": [
+            [
+                "c8a10b036762e461"
+            ]
+        ]
+    },
+    {
+        "id": "d8b24577190a5f9d",
+        "type": "sqlite",
+        "z": "035df40f4aa608e2",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "WarehouseLabelsMail",
+        "x": 1440,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cdf42d48ddf432e7",
+        "type": "debug",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "841fa7493a46a906",
+        "type": "function",
+        "z": "035df40f4aa608e2",
+        "name": "",
+        "func": "msg.topic = \"INSERT INTO mail (message) VALUES ('\" + msg.payload + \"');\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 340,
+        "wires": [
+            [
+                "d8b24577190a5f9d",
+                "cdf42d48ddf432e7"
+            ]
+        ]
+    },
+    {
+        "id": "895a24511b180d32",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "update_oversigt",
+        "links": [
+            "217a584b5804ac19"
+        ],
+        "x": 425,
+        "y": 320,
+        "wires": [
+            [
+                "baea24dc410371ba"
+            ]
+        ]
+    },
+    {
+        "id": "c725535bfd78bb91",
+        "type": "ui_template",
+        "z": "226feb92e58e83aa",
+        "group": "6969dfa8874fcb78",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    #Tab_Oversigt > div {\n        width: 90vW;\n    }\n\n    #Tab_Oversigt > div > p[style] {\n        width:100% !important;\n    }\n    #Oversigt_table > div {\n    width: 70vW;\n    height: 90vh;\n    }\n    \n    #Oversigt_table > div > p[style] {\n    width:100% !important;\n    }\n\n    #Oversigt_table_cards[style] {\n        width:100% !important;\n        height:100% !important;\n    }\n\n    #Oversigt_table_cards > md-card[style] {\n        width:100% !important;\n        height:100% !important;\n    }\n    \n    .tabulator {\n        height: 100% !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 400,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be109f00a1266409",
+        "type": "ui_table",
+        "z": "226feb92e58e83aa",
+        "group": "6969dfa8874fcb78",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 790,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "3c8033251c27e703",
+        "type": "ui_dropdown",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Varenr",
+        "tooltip": "Vælg varenummer fra dropdown, tryk bagefter på knappen/erne som skal tilknyttes",
+        "place": "Select option",
+        "group": "974dfba731e35b1e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "71e8148e8cc864c7"
+            ]
+        ]
+    },
+    {
+        "id": "7d3908e999aaf281",
+        "type": "ui_switch",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Button setup",
+        "tooltip": "",
+        "group": "974dfba731e35b1e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "e01a43745ab3ec28"
+            ]
+        ]
+    },
+    {
+        "id": "f1282bb8cdc46b14",
+        "type": "ui_toast",
+        "z": "226feb92e58e83aa",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1200,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b5f571040a41700e",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "UI_dropdown",
+        "links": [
+            "1ee5393e9e27655c"
+        ],
+        "x": 65,
+        "y": 520,
+        "wires": [
+            [
+                "ca82c9a43fcc18e2"
+            ]
+        ]
+    },
+    {
+        "id": "ca82c9a43fcc18e2",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "options",
+                "pt": "msg",
+                "to": "$.payload.varenr",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 520,
+        "wires": [
+            [
+                "3c8033251c27e703"
+            ]
+        ]
+    },
+    {
+        "id": "0d3ddf53fc774e77",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "Button_setup_state",
+        "mode": "link",
+        "links": [
+            "cbded32c3ec0aad8",
+            "9889abd004316eec"
+        ],
+        "x": 735,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "58051a36ca0202b0",
+        "type": "ui_ui_control",
+        "z": "226feb92e58e83aa",
+        "name": "Reset button setup on tab change",
+        "events": "change",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "2caf88ddce30de32"
+            ]
+        ]
+    },
+    {
+        "id": "2caf88ddce30de32",
+        "type": "switch",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "change",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "21e9c20f28a40a08"
+            ]
+        ]
+    },
+    {
+        "id": "21e9c20f28a40a08",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "7d3908e999aaf281"
+            ]
+        ]
+    },
+    {
+        "id": "027abf676374f18d",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "varenummer_dropdown",
+        "mode": "link",
+        "links": [
+            "2894d90d417caf80"
+        ],
+        "x": 705,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "71e8148e8cc864c7",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "Set Parts and topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "varenr",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 520,
+        "wires": [
+            [
+                "027abf676374f18d"
+            ]
+        ]
+    },
+    {
+        "id": "6bdc5c90e37861ec",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "setup_popup",
+        "links": [
+            "ffcd44e26c0336b2"
+        ],
+        "x": 895,
+        "y": 520,
+        "wires": [
+            [
+                "cabb05d595dff853"
+            ]
+        ]
+    },
+    {
+        "id": "cabb05d595dff853",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "func": "msg.topic = msg.payload.varenr;\nmsg.payload = \"Knyttet til knap: \" + msg.payload.mqtt[0] + \" på esp: \" + msg.payload.mqtt[1]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 520,
+        "wires": [
+            [
+                "f1282bb8cdc46b14"
+            ]
+        ]
+    },
+    {
+        "id": "b9202998b9fade41",
+        "type": "ui_form",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Tilføj nyt produkt til database",
+        "group": "aac9edf9180d86af",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Varenummer",
+                "value": "varenr",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Navn",
+                "value": "navn",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Beskrivelse",
+                "value": "beskrivelse",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "varenr": "",
+            "navn": "",
+            "beskrivelse": ""
+        },
+        "payload": "",
+        "submit": "Tilføj",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "24be292ae20a2dc7",
+                "dbdbfae91393ab8d"
+            ]
+        ]
+    },
+    {
+        "id": "24be292ae20a2dc7",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "new_product",
+        "mode": "link",
+        "links": [
+            "151d2af128f6b236"
+        ],
+        "x": 765,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e17d911af0b54c8a",
+        "type": "ui_numeric",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Antal",
+        "tooltip": "Antallet af varenummeret i kassen",
+        "group": "974dfba731e35b1e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "4096",
+        "step": 1,
+        "className": "",
+        "x": 390,
+        "y": 580,
+        "wires": [
+            [
+                "8b040ec383167edd"
+            ]
+        ]
+    },
+    {
+        "id": "8b040ec383167edd",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "Set Parts and topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "antal",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "3",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 580,
+        "wires": [
+            [
+                "ba707f2dbf0d252a"
+            ]
+        ]
+    },
+    {
+        "id": "ba707f2dbf0d252a",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "antal",
+        "mode": "link",
+        "links": [
+            "5e378f1c1c8aef42"
+        ],
+        "x": 705,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9b964175bee5bdef",
+        "type": "inject",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 90,
+        "y": 580,
+        "wires": [
+            [
+                "80f3d9b4129e19c6"
+            ]
+        ]
+    },
+    {
+        "id": "dbdbfae91393ab8d",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "func": "msg.topic = msg.payload.navn;\nmsg.payload = msg.payload.varenr + \" er tilføjet til databasen\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 160,
+        "wires": [
+            [
+                "e585e6991ad68837"
+            ]
+        ]
+    },
+    {
+        "id": "e585e6991ad68837",
+        "type": "ui_toast",
+        "z": "226feb92e58e83aa",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 980,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "80f3d9b4129e19c6",
+        "type": "trigger",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "op1": "0",
+        "op2": "100",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 240,
+        "y": 580,
+        "wires": [
+            [
+                "e17d911af0b54c8a"
+            ]
+        ]
+    },
+    {
+        "id": "e0d6c7c5acb368a7",
+        "type": "ui_switch",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Påfyldnings knap",
+        "tooltip": "Er knappen som bliver trykket på en påfyldnings knap",
+        "group": "974dfba731e35b1e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "2744a9fbd8bd0791"
+            ]
+        ]
+    },
+    {
+        "id": "59baba88f674528f",
+        "type": "inject",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 70,
+        "y": 440,
+        "wires": [
+            [
+                "0e64bd7659dd63e3"
+            ]
+        ]
+    },
+    {
+        "id": "0e64bd7659dd63e3",
+        "type": "trigger",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "e0d6c7c5acb368a7"
+            ]
+        ]
+    },
+    {
+        "id": "2744a9fbd8bd0791",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "Set Parts and topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "reset",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "4",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "891c79222943a4a3"
+            ]
+        ]
+    },
+    {
+        "id": "891c79222943a4a3",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "reset_knap",
+        "mode": "link",
+        "links": [
+            "0882d8de9c6d1d01"
+        ],
+        "x": 845,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "065f2f90a4b72cf1",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "setup_acknowledge",
+        "links": [
+            "703d43e3e96b1dc7"
+        ],
+        "x": 895,
+        "y": 580,
+        "wires": [
+            [
+                "b2a473a217614b1c"
+            ]
+        ]
+    },
+    {
+        "id": "b2a473a217614b1c",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": " ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 580,
+        "wires": [
+            [
+                "f1282bb8cdc46b14"
+            ]
+        ]
+    },
+    {
+        "id": "23247592ae2d3411",
+        "type": "ui_text_input",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "Hylde position",
+        "tooltip": "",
+        "group": "974dfba731e35b1e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "text",
+        "delay": "300",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "6ccbf95418843076"
+            ]
+        ]
+    },
+    {
+        "id": "6ccbf95418843076",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "Set Parts and topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "gpos",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "5",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 640,
+        "wires": [
+            [
+                "ae756fb45f6ea7d3"
+            ]
+        ]
+    },
+    {
+        "id": "ae756fb45f6ea7d3",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "hylde_position",
+        "mode": "link",
+        "links": [
+            "3bb709566980db55"
+        ],
+        "x": 705,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "f98019b72cabcb01",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "974dfba731e35b1e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "hylde position tekst",
+        "label": "",
+        "format": "Hylde position skal være den samme for påfyldnings knapper og tømme knapper",
+        "layout": "row-left",
+        "className": "",
+        "x": 430,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6dc6bf72c53fea47",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "974dfba731e35b1e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "button setup tekst",
+        "label": "",
+        "format": "Tilføj eller rediger knap",
+        "layout": "row-left",
+        "className": "",
+        "x": 430,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "bcca76b21008cb4f",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "1b03e85e03cca24f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "esp setup tekst",
+        "label": "",
+        "format": "Tilføj eller rediger esp",
+        "layout": "row-left",
+        "className": "",
+        "x": 440,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "022ac1ca373278cf",
+        "type": "ui_dropdown",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "",
+        "tooltip": "Vælg mac adresse fra dropdown hvis du vil redigere en allerede eksisterende esp",
+        "place": "Vælg enhed",
+        "group": "1b03e85e03cca24f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 440,
+        "y": 920,
+        "wires": [
+            [
+                "8fdb06ce8eaec285",
+                "17d39755651912a0"
+            ]
+        ]
+    },
+    {
+        "id": "62b7b64ea8c48e64",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "options",
+                "pt": "msg",
+                "to": "$.payload.name",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 920,
+        "wires": [
+            [
+                "022ac1ca373278cf"
+            ]
+        ]
+    },
+    {
+        "id": "b7bdb98731540597",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "links": [
+            "1ee5393e9e27655c"
+        ],
+        "x": 85,
+        "y": 920,
+        "wires": [
+            [
+                "62b7b64ea8c48e64"
+            ]
+        ]
+    },
+    {
+        "id": "3e87c52491e478d9",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "esp_add",
+        "mode": "link",
+        "links": [
+            "8817d0f32f4e2153"
+        ],
+        "x": 965,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a4f8ecbe7efea853",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "func": "msg.topic = msg.payload.mac;\nmsg.payload = msg.payload.name + \" er tilføjet til databasen\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 940,
+        "wires": [
+            [
+                "0be9c66dbefabe96"
+            ]
+        ]
+    },
+    {
+        "id": "0be9c66dbefabe96",
+        "type": "ui_toast",
+        "z": "226feb92e58e83aa",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 1200,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "3eeb07aed29b87a6",
+        "type": "ui_upload",
+        "z": "226feb92e58e83aa",
+        "group": "aac9edf9180d86af",
+        "title": "upload",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "chunk": 256,
+        "transfer": "text",
+        "x": 170,
+        "y": 1220,
+        "wires": [
+            [
+                "468773224ff30b13"
+            ]
+        ]
+    },
+    {
+        "id": "468773224ff30b13",
+        "type": "csv",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "sep": ";",
+        "hdrin": true,
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "varenr,navn,beskrivelse",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 330,
+        "y": 1220,
+        "wires": [
+            [
+                "c8363119c46c6cc8"
+            ]
+        ]
+    },
+    {
+        "id": "c8363119c46c6cc8",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "product_upload",
+        "mode": "link",
+        "links": [
+            "151d2af128f6b236"
+        ],
+        "x": 485,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "baea24dc410371ba",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control",
+                "pt": "msg",
+                "to": "{\"tabulator\":{\"columnMoved\":\"function(column, columns){     var newColumns=[];     columns.forEach(function (column) {         newColumns.push({'field': column._column.field});     });     this.send({topic:this.config.topic,ui_control:{callback:'columnMoved',columns:newColumns}}); }\",\"columns\":[{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Vare nr\",\"field\":\"produkt_id\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Navn\",\"field\":\"navn\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Antal pr. kasse\",\"field\":\"antal\",\"align\":\"right\"},{\"formatterParams\":{\"target\":\"_blank\",\"min\":0,\"max\":2,\"color\":[\"green\",\"yellow\",\"red\"]},\"title\":\"Status\",\"field\":\"state\",\"formatter\":\"progress\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Hylde Position\",\"field\":\"gpos\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Celle\",\"field\":\"mpos\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Begge knapper?\",\"field\":\"pair\"},{\"formatterParams\":{\"target\":\"_blank\"},\"title\":\"Opdateret\",\"field\":\"opdateret\"}],\"layout\":\"fitColumns\",\"movableColumns\":true}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 320,
+        "wires": [
+            [
+                "be109f00a1266409"
+            ]
+        ]
+    },
+    {
+        "id": "df62d34b1b4e8ce8",
+        "type": "ui_form",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "",
+        "group": "033cac6f4a49fbf4",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Email",
+                "value": "email",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "email": ""
+        },
+        "payload": "",
+        "submit": "Tilføj",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 170,
+        "y": 1340,
+        "wires": [
+            [
+                "8ab5b2a7c475341a"
+            ]
+        ]
+    },
+    {
+        "id": "8ab5b2a7c475341a",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "email_setup",
+        "mode": "link",
+        "links": [
+            "f912806beb3c0390"
+        ],
+        "x": 315,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "17d39755651912a0",
+        "type": "link out",
+        "z": "226feb92e58e83aa",
+        "name": "mac_call",
+        "mode": "link",
+        "links": [
+            "65752bb2561283b8"
+        ],
+        "x": 475,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "a365b2b8f35ed461",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "esp_mac",
+        "links": [
+            "81ab756898d7986f"
+        ],
+        "x": 545,
+        "y": 880,
+        "wires": [
+            [
+                "a2d98db47ecf80d2"
+            ]
+        ]
+    },
+    {
+        "id": "99592f3e1f62dbd7",
+        "type": "ui_form",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "label": "",
+        "group": "1b03e85e03cca24f",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Mac Adresse",
+                "value": "mac",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Kaldenavn",
+                "value": "name",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Celle",
+                "value": "mpos",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "mac": "",
+            "name": "",
+            "mpos": ""
+        },
+        "payload": "",
+        "submit": "Tilføj",
+        "cancel": "Fortryd",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 850,
+        "y": 920,
+        "wires": [
+            [
+                "a4f8ecbe7efea853",
+                "3e87c52491e478d9"
+            ]
+        ]
+    },
+    {
+        "id": "8fdb06ce8eaec285",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "set payload",
+        "func": "msg.payload = {\"name\": msg.payload}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 920,
+        "wires": [
+            [
+                "99592f3e1f62dbd7"
+            ]
+        ]
+    },
+    {
+        "id": "8848a7a3ead73ea5",
+        "type": "ui_ui_control",
+        "z": "226feb92e58e83aa",
+        "name": "Reset esp setup on tab change",
+        "events": "all",
+        "x": 590,
+        "y": 980,
+        "wires": [
+            [
+                "022ac1ca373278cf",
+                "99592f3e1f62dbd7"
+            ]
+        ]
+    },
+    {
+        "id": "a2d98db47ecf80d2",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "set payload",
+        "func": "msg.payload = {\"mac\": msg.payload[0].mac, \"mpos\": msg.payload[0].mpos}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 880,
+        "wires": [
+            [
+                "99592f3e1f62dbd7"
+            ]
+        ]
+    },
+    {
+        "id": "d0e49b14381bbf23",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "aac9edf9180d86af",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Upload produkt fil beskrivelse",
+        "label": "",
+        "format": "Produkt data kan også uploades her:",
+        "layout": "row-spread",
+        "className": "",
+        "x": 400,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "88261bee31fa11ea",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "pair_check",
+        "links": [
+            "a86e6e82102c48a8"
+        ],
+        "x": 155,
+        "y": 1140,
+        "wires": [
+            [
+                "67f76cbfae1e5b28"
+            ]
+        ]
+    },
+    {
+        "id": "d5dc595770bd58b4",
+        "type": "ui_toast",
+        "z": "226feb92e58e83aa",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 530,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67f76cbfae1e5b28",
+        "type": "function",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "func": "msg.topic = msg.produkt;\nmsg.payload = msg.produkt + \" har kun 1 knap knyttet til sig.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1140,
+        "wires": [
+            [
+                "d5dc595770bd58b4"
+            ]
+        ]
+    },
+    {
+        "id": "6ad114fbc9ef03f0",
+        "type": "change",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 640,
+        "wires": [
+            [
+                "23247592ae2d3411"
+            ]
+        ]
+    },
+    {
+        "id": "47fd6cced440f637",
+        "type": "link in",
+        "z": "226feb92e58e83aa",
+        "name": "setup_popup",
+        "links": [
+            "ffcd44e26c0336b2"
+        ],
+        "x": 25,
+        "y": 640,
+        "wires": [
+            [
+                "6ad114fbc9ef03f0"
+            ]
+        ]
+    },
+    {
+        "id": "e01a43745ab3ec28",
+        "type": "switch",
+        "z": "226feb92e58e83aa",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "",
+                "vt": "prev"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "0d3ddf53fc774e77"
+            ]
+        ]
+    },
+    {
+        "id": "095744578c54ef0b",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "f5f7146e509bf5d6",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "name": "Instruktioner tømning",
+        "label": "Instruktioner",
+        "format": "Når en kasse er tom trykkes 1 gang på den forreste knap tilknyttet varenummeret, og kassen flyttes om bagerst.",
+        "layout": "col-center",
+        "className": "",
+        "x": 1020,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "1c08101f693a1edf",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "f5f7146e509bf5d6",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "name": "Instruktioner påfyldning",
+        "label": "",
+        "format": "Når en kasse er blevet fyldt op trykkes 1 gang på den bagerste knap tilknyttet varenummeret.",
+        "layout": "col-center",
+        "className": "",
+        "x": 1030,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "ee70d40fa0b10c79",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "f5f7146e509bf5d6",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "name": "Instruktioner påfyldning",
+        "label": "",
+        "format": "På oversigten kan status og position ses for hvert varenummer. Status viser enten blank, når der ikke er tømt nogle kasser for varenummeret, halvt fyldt med gul, når der er tømt én kasse for varenummeret, eller helt fyldt med rød når begge kasser er registreret tomme.",
+        "layout": "col-center",
+        "className": "",
+        "x": 1030,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "05a03fb75be94305",
+        "type": "ui_text",
+        "z": "226feb92e58e83aa",
+        "group": "f5f7146e509bf5d6",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "name": "Instruktioner påfyldning",
+        "label": "",
+        "format": "Systemet er en prototype og vil på et senere tidspunkt bl. a. få tilføjet LED'er til knapperne som vil vise status.",
+        "layout": "col-center",
+        "className": "",
+        "x": 1030,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e8955e2a9ab1d748",
+        "type": "e-mail",
+        "z": "4832cfdf5504ce96",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 1080,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f912806beb3c0390",
+        "type": "link in",
+        "z": "4832cfdf5504ce96",
+        "name": "email_setup",
+        "links": [
+            "8ab5b2a7c475341a"
+        ],
+        "x": 135,
+        "y": 540,
+        "wires": [
+            [
+                "353a4dd97ed94bbe"
+            ]
+        ]
+    },
+    {
+        "id": "353a4dd97ed94bbe",
+        "type": "file",
+        "z": "4832cfdf5504ce96",
+        "name": "saveRecipient",
+        "filename": "emailRecipient.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 270,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5a8d7ceb9c78713",
+        "type": "file in",
+        "z": "4832cfdf5504ce96",
+        "name": "Read recepient",
+        "filename": "emailRecipient.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": true,
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "1998e4046c7cf0a2"
+            ]
+        ]
+    },
+    {
+        "id": "1998e4046c7cf0a2",
+        "type": "function",
+        "z": "4832cfdf5504ce96",
+        "name": "clean",
+        "func": "var str = msg.payload;\nvar cleanStr = str.slice(10,-4);\nmsg.to = cleanStr;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "5f5692a7c985e9c6"
+            ]
+        ]
+    },
+    {
+        "id": "5f5692a7c985e9c6",
+        "type": "change",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "2",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "complete",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 440,
+        "wires": [
+            [
+                "b155f4a95a019e6a"
+            ]
+        ]
+    },
+    {
+        "id": "b155f4a95a019e6a",
+        "type": "join",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "mode": "custom",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 920,
+        "y": 380,
+        "wires": [
+            [
+                "e8955e2a9ab1d748"
+            ]
+        ]
+    },
+    {
+        "id": "0b91d979c5741847",
+        "type": "change",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "parts",
+                "pt": "msg",
+                "to": "1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "b155f4a95a019e6a"
+            ]
+        ]
+    },
+    {
+        "id": "e3872061e558fd2f",
+        "type": "sqlite",
+        "z": "4832cfdf5504ce96",
+        "mydb": "1b16b0c91545166b",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "a5ba71af5691b56b"
+            ]
+        ]
+    },
+    {
+        "id": "754d69020b7c92f2",
+        "type": "inject",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 12 * * 1,2,3,4,5",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "SELECT message FROM mail; \\nDELETE FROM mailOld; \\nINSERT INTO mailOld SELECT * FROM mail;",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "8ba1c3937e96fc40"
+            ]
+        ]
+    },
+    {
+        "id": "a5ba71af5691b56b",
+        "type": "function",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "func": "obj = msg;\nvar text = obj.payload[0].message;\nfor (let i = 1; i < obj.payload.length; i++) {\n    text += \"\\n--------------\\n\" + obj.payload[i].message;\n}\nresult = text.replace(\"\\r\\n\", \"\\n\");\nmsg.payload = result;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "187101ab815b3e03"
+            ]
+        ]
+    },
+    {
+        "id": "187101ab815b3e03",
+        "type": "change",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\"},{\"",
+                "fromt": "str",
+                "to": "\\n--------------------------------------------\\n",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "message\":\"",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\"[{\"",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\"}]\"",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "\"",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 680,
+        "y": 220,
+        "wires": [
+            [
+                "84de4e17e746d42d"
+            ]
+        ]
+    },
+    {
+        "id": "0cb0f5742725aea6",
+        "type": "split",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "1a2ec52b123c28f8"
+            ]
+        ]
+    },
+    {
+        "id": "8ba1c3937e96fc40",
+        "type": "function",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "func": "msg.payload = \"SELECT message FROM mail_old;\\nDELETE FROM mail_old;\\nINSERT INTO mail_old SELECT * FROM mail;\\nDELETE FROM mail;\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 120,
+        "wires": [
+            [
+                "0cb0f5742725aea6"
+            ]
+        ]
+    },
+    {
+        "id": "1a2ec52b123c28f8",
+        "type": "change",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 120,
+        "wires": [
+            [
+                "e3872061e558fd2f"
+            ]
+        ]
+    },
+    {
+        "id": "84de4e17e746d42d",
+        "type": "debug",
+        "z": "4832cfdf5504ce96",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 280,
+        "wires": []
+    }
+]
